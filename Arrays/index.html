@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<p id="demo"></p>
+<script>
+//
+const cars = ["Volvo "," Porsche ", " Ferrari "];
+cars[0] = " Tesla";
+
+
+const fruits = ["apple", " banana", " orange", "carrot"];
+
+
+const person = {firstName: "Hüseyin", lastName:" Taşdemir"};
+
+
+
+
+// You can also create an array, and then provide the elements:
+// const cars = [];
+// cars[0]= "Saab";
+// cars[1]= "Volvo";
+// cars[2]= "BMW";
+
+
+// Using the JavaScript Keyword new
+// const cars = new Array("Saab", "Volvo", "BMW");
+
+// The length Property
+// The length property of an array returns the length of an array (the number of array elements).
+
+// Looping Array Elements
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let fLen = fruits.length;
+
+// let text = "<ul>";
+// for (let i = 0; i < fLen; i++) {
+//   text += "<li>" + fruits[i] + "</li>";
+// }
+// text += "</ul>";
+let text = "";
+for( let i = 0; i < fruits.length; i ++){
+     text += fruits[i];
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
