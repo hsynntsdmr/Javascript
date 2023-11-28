@@ -40,7 +40,7 @@ let toplam = 0;
 
 for (let i = 50; i >= 1; i--) {
     toplam += i
-    
+
 }
 console.log(toplam)
 
@@ -50,7 +50,7 @@ console.log(toplam)
 // for(let i = 1; i<=10; i++){
 //     for(let j = 1; j <=10; j++){
 //        console.log(`${i}x${j}=${(i*j)}`)
-    
+
 //     }
 // }
 
@@ -59,30 +59,51 @@ console.log(toplam)
 // sayı nın yarısından sonra tam bölen olmaz, yani yarısına kadar bölsek yeterli
 // Math.floor(sayi/2)
 
-let sayi = Number(prompt("Bir sayı giriniz: "));
-let sonuc = true;
+// let sayi = Number(prompt("Bir sayı giriniz: "));
+// let sonuc = true;
 
-for(let i = 2; i<= Math.floor(sayi/2); i++){
-    if(sayi%i == 0){
-        // asal değildir
-        sonuc = false;
-        break;
-    }
+// for(let i = 2; i<= Math.floor(sayi/2); i++){
+//     if(sayi%i == 0){
+//         // asal değildir
+//         sonuc = false;
+//         break;
+//     }
+// }
+// if(sonuc){
+//     alert(`${sayi} asaldır.`)
+// }else{
+//     alert(`${sayi} asal değildir.`)
+// }
+
+// Faktoriyel Hesaplama
+// 5! 5.4.3.2.1
+
+// let deger = Number(prompt("Bir sayi giriniz:"))
+// let carpim = 1;
+
+// for (i = 1; i <= deger; i++) {
+//   carpim*=i
+// }
+// alert(`${deger} in faktoriyeli = ${carpim}`)
+
+
+//armstrong sayısı hesaplama
+//math.pow(sayi, üs)
+// sayinin basamağı üssü oluyor ve haneleri üssü olarak toplanıp kendine eşitse armstrong sayısı oluyor
+// 407 = (4^3) +(0^3) + (7^3) = 62 + 0 + 343 = 407
+
+let deger = prompt("Bir deger giriniz");
+let summ = 0;
+
+for (i = 0; i <= deger.length; i++) {
+    let rakam = deger.charAt(i)  //charAt ile indekse karşılık gelen sayıyı alıyoruz
+    summ += rakam*rakam*rakam  // sayının kendi küpünü alıyoruz ve toplama ekliyoruz
 }
-if(sonuc){
-    alert(`${sayi} asaldır.`)
+
+if(Number(deger) == summ ){
+    alert(`${deger} armstrong sayısıdır :).`);  
 }else{
-    alert(`${sayi} asal değildir.`)
+    alert(`${deger} armstrong sayısı değildir :(.)`); 
 }
 
-
-
-
-
-
-
-
-
-
-//faktoriyel bulalım
-
+ 
