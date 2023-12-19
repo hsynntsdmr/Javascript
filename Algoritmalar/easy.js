@@ -8,4 +8,8 @@ import { longestWord } from "./easy/2_longestWord.js";
 
 import { firstFactoriel} from "./easy/3_firstFactoriel.js";
 
-console.log(firstFactoriel(5));
+// console.log(firstFactoriel(5));
+
+import { firstReverse} from "./easy/4_firstReverse.js";
+
+console.log(firstReverse("Merhaba"));
